@@ -3,4 +3,4 @@
 Implementation of different trilateration localization algorithms:
 - Linear trilateration
 - Nonlinear trilateration
-- RANSACE trilateration
+- RANSAC trilateration
