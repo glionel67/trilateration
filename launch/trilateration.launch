@@ -1,0 +1,19 @@
+<launch>
+
+	<node pkg="trilateration" type="trilateration_node" 
+	    name="trilateration_node" >
+		<param name="global_frame_name" value="map"/>
+		<param name="range_topic_name" value="beacon_range"/>
+		<param name="position_topic_name" value="trilateration_position"/>
+		<param name="loop_rate" value="10.0"/>
+		<param name="dim" value="2"/>
+	</node>
+
+<!--
+	<node pkg="trilateration" type="trilateration_node" 
+		name="trilateration_node" >
+		<rosparam file="$(find trilateration)/config/configTrilateration.yaml" command="load"/>
+	</node>
+-->
+
+</launch>

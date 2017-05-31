@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+  <name>trilateration</name>
+  <version>0.0.0</version>
+  <description>The trilateration localization package</description>
+
+  <maintainer email="lionel.geneve@gmail.fr">lionel</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>TODO</license>
+
+  <!-- Url tags are optional, but mutiple are allowed, one per tag -->
+  <!-- Optional attribute type can be: website, bugtracker, or repository -->
+  <!-- Example: -->
+  <!-- <url type="website">http://wiki.ros.org/trilateration</url> -->
+
+  <author email="lionel.geneve@gmail.fr">Lionel GENEVE</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>lawnmower</build_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>visualization_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>lawnmower</run_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+</package>

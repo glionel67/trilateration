@@ -1,0 +1,24 @@
+<launch>
+
+	<arg name="bagfilename" default="$(env HOME)/bagfiles/logsPortativeDevice/deuxiemesTestsEnExterieur/log1/logPortativeDevice1.bag" />
+	<arg name="starttime" default="75" />
+
+	<node pkg="trilateration" type="trilateration_node" 
+	    name="trilateration_node" >
+		<param name="global_frame_name" value="map"/>
+		<param name="odom_frame_name" value="odom"/>
+		<param name="range_topic_name" value="/lawnmower/beacon_range"/>
+		<param name="position_topic_name" value="trilateration_position"/>
+		<param name="odom_topic_name" value="trilateration_odom"/>
+		<param name="marker_topic_name" value="trilateration_marker"/>
+		<param name="loop_rate" value="5.0"/>
+		<param name="dim" value="2"/>
+	</node>
+
+	<node pkg="rosbag" type="play" name="play" 
+	    args="-s $(arg starttime) $(arg bagfilename)" />
+
+	    <node pkg="rviz" type="rviz" name="rviz" 
+			args="-d /home/lionel/.rviz/trilateration_config.rviz" />
+
+</launch>

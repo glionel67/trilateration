@@ -1,0 +1,9 @@
+global_frame_nam: map
+odom_frame_nam: odom
+range_topic_name: beacon_range
+position_topic_name: trilateration_position
+odom_topic_name: trilateration_odom
+loop_rate: 10.0
+dim: 2
+thresh_dist: 2.0
+thresh_limit: 50.0

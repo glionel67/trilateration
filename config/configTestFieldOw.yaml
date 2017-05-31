@@ -1,0 +1,20 @@
+global_frame_nam: map
+odom_frame_nam: odom
+range_topic_name: /lawnmower/beacon_ranges
+position_topic_name: trilat_position
+odom_topic_name: trilat_odom
+marker_topic_name: trilat_marker
+loop_rate: 5.0
+dim: 2
+thresh_dist: 2.0
+thresh_limit: 50.0
+# Beacon parameters
+bx: [0, 10.467, 10.185, 9.8266, 2.2197, 2.7155]
+by: [0, 0.00043703, 6.2651, 12.963, 12.257, 5.0966]
+bz: [1.25, 1.25, 1.25, 1.25, 1.25, 1.25]
+stds: [0.033, 0.033, 0.033, 0.033, 0.033, 0.033]
+biases: [0.4, 0.4, 0.4, 0.4, 0.4, 0.4]
+scales: [1, 1, 1, 1, 1, 1]
+etas: [0, 0, 0, 0, 0, 0]
+ids: [1, 2, 3, 4, 5, 6]
+offset_beacon: [-0.0353, 0, 0.2805]
